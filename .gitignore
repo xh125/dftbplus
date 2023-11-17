@@ -13,4 +13,6 @@ __pycache__
 tools/dptools/build
 .nfs*
 _build*
-DFTBPVS/x64/Debug
+DFTBPVS/x64/Debug/*.obj
+DFTBPVS/x64/Debug/*.mod
+DFTBPVS/x64/Debug/*.exe
