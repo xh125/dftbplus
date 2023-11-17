@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectType="typeStaticLibrary" ProjectCreator="Intel Fortran" Keyword="Static Library" Version="11.0" ProjectIdGuid="{4BF80BAF-420A-49DC-96ED-42A6283011ED}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Debug|x64" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" AdditionalIncludeDirectories="$(I_MPI_ONEAPI_ROOT)\include" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Release|Win32" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Release|x64" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" AdditionalIncludeDirectories="$(I_MPI_ONEAPI_ROOT)\include"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath="..\build\external\mpifx\origin\lib\module.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_abort.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_allgather.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_allgatherv.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_allreduce.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_barrier.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_bcast.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_comm.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_common.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_constants.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_finalize.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_gather.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_gatherv.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_get_processor_name.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_helper.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_init.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_recv.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_reduce.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_scatter.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_scatterv.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_send.f90"/>
+		<File RelativePath="..\build\external\mpifx\origin\lib\mpifx_win.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>

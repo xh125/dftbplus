@@ -18,6 +18,7 @@ module dftbp_geoopt_geoopt
   private
   public :: Tgeoopt
   public :: init, reset, next
+  !public :: geoopt_reset, geoopt_next
   public :: geoOptTypes
 
   !> Interface type for the various geometry optimization algorithms
@@ -202,4 +203,5 @@ contains
 
   end subroutine GeoOpt_next
 
+  
 end module dftbp_geoopt_geoopt

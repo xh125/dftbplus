@@ -44,9 +44,13 @@ module dftbp_common_memman
 
   !> Bound to 'posix_memalign' to allocate aligned memory
   interface
+#if defined(__WIN)
+  
+#else
     function posixMemalign(ptr, alignment, size) result(error) bind(C, name="posix_memalign")
       import c_ptr, c_size_t, c_int
       type(c_ptr), intent(inout) :: ptr
+#endif
       integer(c_size_t), intent(in), value :: alignment, size
       integer(c_int) :: error
     end function
