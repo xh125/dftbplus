@@ -1,0 +1,9 @@
+Name: DFTB+
+Description: Library interface to DFTB+, a fast and efficient atomistic quantum mechanical simulation tool
+Version: 23.1
+URL: https://www.dftbplus.org
+
+Requires: mpifx scalapackfx
+Libs: -L/home/xh/soft/DFTB+/23.1/lib -ldftbplus
+Libs.private: /home/xh/soft/Intel/OneAPI/mkl/2023.0.0/lib/intel64/libmkl_intel_lp64.so /home/xh/soft/Intel/OneAPI/mkl/2023.0.0/lib/intel64/libmkl_sequential.so /home/xh/soft/Intel/OneAPI/mkl/2023.0.0/lib/intel64/libmkl_core.so -lm -ldl NONE -L/home/xh/soft/Intel/OneAPI/mkl/2023.0.0/lib/intel64 -L/home/xh/soft/hdf5/1.14.0/lib -L/home/xh/soft/Intel/OneAPI/mpi/2021.8.0/libfabric/lib -L/home/xh/soft/Intel/OneAPI/mpi/2021.8.0/lib/release -L/home/xh/soft/Intel/OneAPI/mpi/2021.8.0/lib -L/home/xh/soft/Intel/OneAPI/compiler/2023.0.0/linux/lib -L/home/xh/soft/Intel/OneAPI/tbb/2021.8.0/lib/intel64/gcc4.8 -L/home/xh/soft/Intel/OneAPI/compiler/2023.0.0/linux/compiler/lib/intel64_lin -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/usr/lib -L/lib/x86_64-linux-gnu -L/lib64 -L/lib -limf -lsvml -lirng -lm -lipgo -ldecimal -lcilkrts -lstdc++ -lgcc -lgcc_s -lirc -lsvml -lc -lgcc -lgcc_s -lirc_s -ldl -lc 
+Cflags: -I/home/xh/soft/DFTB+/23.1/include/dftbplus/modfiles  
